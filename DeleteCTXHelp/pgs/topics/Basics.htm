@@ -1,0 +1,34 @@
+<html>
+<head>
+<META NAME="AppleTitle" CONTENT="DeleteCTX Help - Basics">
+</head>
+<body>
+<p><b>DeleteCTX Basics</b></p>
+<p>DeleteCTX is a really simple droplet (written in Objective-C using Apple's Cocoa API). 
+This progam was developed for the purpose of testing other programs I wrote, but has been packaged
+for any use you might have.
+</p>
+<p>
+The purpose of this droplet is to remove the creator and type codes stored for files on an HFS(+)
+disk. Mac OS X uses two things to determine how files are handled - their file extension
+(e.g. ".html") and the HFS creator/type codes. Sometimes they conflict, and you may want to delete the
+HFS creator/type codes. DeleteCTX does this for you.
+</p>
+<p>
+For example - a text file's creator may be "R*ch" and its type "TEXT". "R*ch" is the creator
+code for the program BBEdit, and "TEXT" tells Mac OS that its a text file. A file with these codes
+would likely be associated with BBEdit; if you double click it, BBEdit will launch. But what if the
+file's extension is ".html" and you want it to be associated with your web browser? Removing the
+creator/type data will cause the file to be associated with the program that Mac OS associates with
+the file's extension.
+</p>
+<p>
+There are two ways to remove the creator/type data from files:
+<ul>
+<li> Drag files or folders onto DeleteCTX's icon. You can put DeleteCTX in the dock for convenience.
+<li> Select "Open..." from DeleteCTX's "File" menu.
+</ul>
+That's it! There are no configuration options as DeleteCTX is so simple and its job is straight forward.
+</p>
+</body>
+</html>	
